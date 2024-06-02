@@ -1,0 +1,110 @@
+.tasks .table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.before-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.before-table .selection-task {
+  width: 100px;
+}
+
+.before-table .selection-task .select-task {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.before-table .selection-task .select-task option {
+  padding: 5px;
+}
+
+.before-table a {
+  background-color: green;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.before-table a:hover {
+  background-color: rgb(1, 82, 1);
+}
+
+.tasks table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 2px solid #bee3f8;
+  text-align: center;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tasks h1 {
+  text-align: center;
+}
+
+.tasks table th,
+.tasks table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #bee3f8;
+}
+
+.tasks table th {
+  cursor: pointer;
+}
+
+.tasks table th svg {
+  width: 10px;
+}
+
+.urgent,
+.done {
+  background-color: #f44336;
+  color: white;
+  width: fit-content;
+  padding: 3px;
+  text-align: center;
+}
+
+.open {
+  background-color: green;
+  color: white;
+  width: fit-content;
+  padding: 3px;
+  text-align: center;
+}
+
+.tasks table th {
+  background-color: #bee3f8;
+  text-align: center;
+}
+
+.tasks table tr:hover {
+  background-color: #f5f5f5;
+  text-align: center;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .tasks .table-wrapper {
+    overflow-x: scroll;
+  }
+
+  .tasks table {
+    min-width: 600px;
+  }
+}

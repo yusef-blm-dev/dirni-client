@@ -1,0 +1,126 @@
+nav {
+  background-color: #bee3f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  height: 60px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+nav .home-link {
+  font-weight: 700;
+  position: relative;
+  padding: 10px;
+}
+
+nav .home-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4px;
+  transition: 0.4s;
+  transform-origin: center;
+}
+
+nav .home-link:hover::after {
+  width: calc(100% + 15px);
+}
+
+nav .bars-nav {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+@media (min-width: 766.98px) {
+  nav .bars-nav {
+    display: none;
+  }
+}
+
+nav ul {
+  display: flex !important;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  font-weight: 500;
+}
+
+nav ul.open {
+  display: flex !important;
+  position: absolute;
+  background-color: #bee3f8;
+  padding: 20px;
+  top: 60px;
+  right: 15px;
+  z-index: 100;
+  width: 300px;
+  max-width: 100%;
+}
+
+nav ul.open li {
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul li {
+  position: relative;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  padding: 10px;
+}
+
+nav ul li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  transition: 0.4s;
+  transform-origin: center;
+}
+
+nav ul li:hover::after {
+  width: calc(100% - 15px);
+}
+
+nav ul.close {
+  display: none;
+  width: fit-content;
+}
+
+nav ul li img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 767.98px) {
+  nav ul {
+    display: none !important;
+    flex-direction: column;
+  }
+  nav ul li:hover::after {
+    width: 0;
+  }
+}

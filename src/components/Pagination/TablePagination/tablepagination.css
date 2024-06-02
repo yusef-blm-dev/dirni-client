@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.pagination button svg {
+  width: 10px;
+  height: 10px;
+}
+.pagination .chevronleft,
+.pagination .chevrondoubleleft,
+.pagination .chevronright,
+.pagination .chevrondoubleright {
+  padding: 8px 13px;
+}

@@ -1,0 +1,100 @@
+.container-task {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.container-task .container-task-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.container-task .container-task-info {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.container-task .container-task-info .urgent {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container-task .container-task-info .not-urgent {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container-task .container-task-info .open {
+  background-color: green;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container-task .container-task-info .done {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.container-task .container-task-desc {
+  padding: 40px;
+  width: 500px;
+  max-width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.container-task .container-task-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  max-width: 100%;
+}
+
+.container-task .container-task-links a {
+  color: white;
+  background-color: #5397be;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.container-task .container-task-links a:hover {
+  background-color: #2d7198;
+}
+
+.container-task .container-task-links button {
+  color: white;
+  background-color: red;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container-task .container-task-links button:hover {
+  background-color: rgb(194, 0, 0);
+}
+
+.container-task .back-tasks {
+  margin-top: 20px;
+  color: blue;
+}

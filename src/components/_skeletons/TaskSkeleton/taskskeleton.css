@@ -1,0 +1,34 @@
+.skeleton {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 2rem;
+}
+
+.skeleton-info {
+  width: 100px;
+  height: 1.5rem;
+}
+
+.skeleton-desc {
+  width: 500px;
+  height: 150px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.skeleton-link {
+  width: 100px;
+  height: 2rem;
+  margin-right: 10px;
+}
+
+.skeleton-back {
+  width: 200px;
+  height: 2rem;
+  margin-top: 20px;
+}

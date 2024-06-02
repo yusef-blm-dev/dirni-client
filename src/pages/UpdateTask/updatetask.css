@@ -1,0 +1,89 @@
+.update-task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.update-task-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-task-container .update-task-form {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.update-task-container .left-side,
+.update-task-container .right-side {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+@media (max-width: 767.98px) {
+  .update-task-container {
+    height: 100%;
+    padding-top: 20px;
+  }
+  .update-task-container .update-task-form {
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .update-task-container form {
+    max-width: 100%;
+  }
+
+  .update-task-container .left-side,
+  .update-task-container .right-side {
+    width: 100%;
+  }
+}
+
+.update-task-container label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.update-task-container input[type="text"],
+.update-task-container textarea,
+.update-task-container select,
+.update-task-container input[type="date"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.update-task-container textarea {
+  height: 100px;
+  resize: none;
+}
+
+.update-task-container button {
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #5397be;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.update-task-container button:hover {
+  background-color: #2d7198;
+}

@@ -1,0 +1,38 @@
+.avatar-uploader .dropzone {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.avatar-container {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.avatar-preview {
+  object-fit: cover;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-top: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.avatar-container:hover .tooltip {
+  display: block;
+}

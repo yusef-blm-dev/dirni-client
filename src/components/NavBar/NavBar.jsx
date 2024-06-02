@@ -82,11 +82,13 @@ const NavBar = () => {
           </li>
         )}
       </ul>
-      <ImageModal
-        show={showImageModal}
-        onClose={handleCloseImageModal}
-        imageUrl={user.avatar}
-      />
+      {user && (
+        <ImageModal
+          show={showImageModal}
+          onClose={handleCloseImageModal}
+          imageUrl={user.avatar}
+        />
+      )}
     </nav>
   );
 };
